@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "Raphaëlo Pizza — La Meilleure Pizza",
+    "description": "Raphaëlo Pizza - La Meilleure Pizza au Cameroun. Commandez directement sur WhatsApp. Yaoundé & Douala."
+  },
+  "nav": {
+    "about": "À propos",
+    "menu": "Menu",
+    "locations": "Nos Points"
+  },
+  "hero": {
+    "subtitle": "L'INSTINCT DU FEU",
+    "description": "Pas de compromis. Pas de modération. Juste la brûlure du four et l'obsession du goût.",
+    "cta": "Commander"
+  },
+  "about": {
+    "label": "Notre Histoire",
+    "title": "L'art de la pizza, fait maison",
+    "description": "Depuis 2015, Raphaëlo Pizza s'engage à offrir la meilleure pizza au Cameroun. Des ingrédients frais, une pâte préparée chaque jour, et un savoir-faire qui a conquis des milliers de gourmands à travers le pays.",
+    "locations": "Points de vente",
+    "reviews": "Avis clients",
+    "fans": "K+ Fans"
+  },
+  "menu": {
+    "label": "02 // LA SÉLECTION",
+    "title": "NOS PIZZAS",
+    "subtitle": "Fermentation 48h • Cuisson Haute Température • Prix en FCFA",
+    "order": "Commander"
+  },
+  "band": {
+    "locations": "Points de Vente",
+    "reviews": "Avis Clients",
+    "days": "Jours Ouvert"
+  },
+  "locations": {
+    "label": "Où nous trouver",
+    "title": "Nos Points de Vente",
+    "hours": "7j/7 • 11h — 21h30"
+  },
+  "cta": {
+    "title1": "ENVIE D'UNE",
+    "title2": "PIZZA ?",
+    "description": "Commandez directement sur WhatsApp et recevez votre pizza fraîche en un rien de temps.",
+    "button": "Commander sur WhatsApp"
+  },
+  "footer": {
+    "manifesto": "La pâte fermente. Le feu décide. Aucun raccourci. Aucune concession. Chaque pizza est un acte de résistance contre la médiocrité.",
+    "tagline": "Pizza artisanale radicale",
+    "cta": "Commander",
+    "hours": "7j/7 • 11h — 21h30"
+  }
+}
