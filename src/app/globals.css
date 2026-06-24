@@ -1,65 +1,30 @@
-@import "tailwindcss";
+@import "./fonts.css";
 
-@theme {
-  --color-dark: #0D0D0D;
-  --color-dark-elevated: #161616;
-  --color-dark-surface: #1E1E1E;
-  --color-accent-red: #E63028;
-  --color-accent-gold: #C8A750;
-  --color-cream: #F8F4E8;
-  --color-text-primary: #F5F5F0;
-  --color-text-secondary: #B0B0B0;
-  --font-display: 'Bebas Neue', sans-serif;
-  --font-body: 'Source Sans 3', sans-serif;
-  --font-size-hero: clamp(3.5rem, 10vw, 9rem);
-  --font-size-section: clamp(2.5rem, 6vw, 5rem);
+/* ==========================================================================
+   Raphaëlo Pizza — base reset + keyframes (issus du design « Feu & Matière »)
+   ========================================================================== */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#0D0D0D;color:#F5F1E6;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;padding:0;margin:0;cursor:pointer}
+img{display:block;max-width:100%}
+::selection{background:#E63028;color:#fff}
+:focus-visible{outline:2px solid #C8A750;outline-offset:3px;border-radius:2px}
+
+@keyframes rz-mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes rz-mqr{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes rz-pulse{0%{transform:scale(1);opacity:.55}70%{transform:scale(2.5);opacity:0}100%{opacity:0}}
+@keyframes rz-spin{to{transform:rotate(360deg)}}
+
+#rz-fab{opacity:0;transform:scale(.85);pointer-events:none}
+#rz-fab.rz-fab--show{opacity:1;transform:scale(1);pointer-events:auto}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
 }
-
-@layer base {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  body {
-    font-family: var(--font-body);
-    background-color: var(--color-dark);
-    color: var(--color-text-primary);
-    overflow-x: hidden;
-  }
-
-  ::selection {
-    background: var(--color-accent-red);
-    color: var(--color-text-primary);
-  }
-}
-
-@keyframes wa-entrance {
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes wa-pulse {
-  0% { transform: scale(1); opacity: 1; }
-  100% { transform: scale(1.4); opacity: 0; }
-}
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+@media (max-width:860px){
+  #rz-navlinks{display:none!important}
+  #rz-nav-order span{display:none}
+  #rz-burger{display:flex!important}
 }
